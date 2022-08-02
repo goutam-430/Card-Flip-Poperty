@@ -1,0 +1,80 @@
+
+.card-one{
+    
+    left: 25%;
+}
+.card-two{
+    left: 50%;
+}
+.card-three{
+    left: 75%;
+}
+
+.maincontainer{
+    top: 50%;
+    position: absolute;
+  width: 250px;
+  height: 320px;
+  background: none;
+  
+  transform: translate(-50%, -50%);
+}
+
+.the-card{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+  }
+  .the-card:hover{
+    transform: rotateY(180deg);
+  }
+  .first-card{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: #ffc728;
+    color: #000;
+  }
+  .second-card{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: #fafafa;
+    color: #333;
+    text-align: center;
+    transform: rotateY(180deg);
+  }
+  .first-card h1, .second-card h1{
+    font-family: 'zilla slab', sans-serif;
+    padding: 30px;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+  }
+  .first-card p, .second-card p{
+    font-family: 'zilla slab', sans-serif;
+    padding: 30px;
+    font-weight: normal;
+    font-size: 12px;
+    text-align: center;
+    margin-top: -36px;
+  }
+  .btn{
+    margin-top: -40px;
+  }
+  
